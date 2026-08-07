@@ -32,7 +32,7 @@ const TRUST_BADGES = [
 ];
 
 export const About = () => (
-  <section id="about" className="bg-background py-28 md:py-36">
+  <section id="about" className="bg-background py-20 md:py-28 lg:py-36">
     <div className="mx-auto max-w-[1400px] px-6 md:px-10 lg:px-14">
       <div className="grid grid-cols-1 gap-14 lg:grid-cols-12 lg:gap-20">
         {/* Left: intro */}
@@ -106,7 +106,7 @@ export const About = () => (
       </div>
 
       {/* Mission / Vision / Values */}
-      <div className="mt-24 grid grid-cols-1 gap-5 md:grid-cols-3">
+      <div className="mt-16 grid grid-cols-1 gap-4 md:mt-20 md:grid-cols-3 md:gap-5 lg:mt-24">
         {PILLARS.map((p, i) => (
           <Reveal key={p.n} delay={i * 0.08}>
             <div className="group h-full rounded-[20px] border border-border bg-white p-8 transition-all duration-500 hover:-translate-y-1 hover:border-accent hover:shadow-elegant-lg lg:p-10">

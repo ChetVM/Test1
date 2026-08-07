@@ -52,7 +52,7 @@ export const Contact = () => {
     "mt-2 h-12 rounded-2xl border-white/15 bg-white/[0.04] text-white placeholder:text-white/35 focus-visible:ring-accent focus-visible:ring-offset-0 focus-visible:border-accent transition-colors";
 
   return (
-    <section id="contact" className="relative overflow-hidden bg-primary py-28 text-white md:py-36">
+    <section id="contact" className="relative overflow-hidden bg-primary py-20 text-white md:py-28 lg:py-36">
       <div
         className="absolute inset-0 opacity-[0.05]"
         style={{

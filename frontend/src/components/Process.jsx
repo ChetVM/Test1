@@ -16,7 +16,7 @@ export const Process = () => {
   const lineHeight = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
   return (
-    <section id="process" className="bg-background py-28 md:py-36">
+    <section id="process" className="bg-background py-20 md:py-28 lg:py-36">
       <div ref={ref} className="mx-auto max-w-[1400px] px-6 md:px-10 lg:px-14">
         <div className="mb-20 text-center">
           <Reveal>

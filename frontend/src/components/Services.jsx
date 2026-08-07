@@ -7,7 +7,7 @@ import { SERVICES } from "../data";
 const ICONS = { Truck, Package, Zap, FileText, Factory, Warehouse, Container, MapPin };
 
 export const Services = () => (
-  <section id="services" className="bg-surface py-28 md:py-36">
+  <section id="services" className="bg-surface py-20 md:py-28 lg:py-36">
     <div className="mx-auto max-w-[1400px] px-6 md:px-10 lg:px-14">
       <div className="mb-20 grid grid-cols-1 gap-8 lg:grid-cols-12 lg:items-end">
         <div className="lg:col-span-8">

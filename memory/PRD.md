@@ -32,6 +32,17 @@ Build a world-class, production-ready logistics company marketing website for **
 - [x] All 11 sections built with framer-motion scroll reveals + Lenis smooth scrolling.
 - [x] Contact form with client-side validation + animated success screen.
 
+### v4 (tablet & mobile UX pass — desktop untouched)
+- [x] Hero: mobile-specific typography scale (`text-[2.5rem] sm:text-5xl md:text-6xl lg:text-[5.5rem]`), short trust-chip copy on small screens, tighter vertical rhythm, `100svh` for mobile safe-area, full-width pill CTAs, image `object-position: 65% center` so the truck stays framed on narrow phones.
+- [x] Navbar: mobile drawer refactored to render outside the `motion.header` so `position: fixed` isn't scoped by the header's transform; slide-in with staggered nav items, larger 44×44 pill toggle button, body-scroll lock, opaque navy panel with contact info + WhatsApp CTA. iPad Pro (lg) navbar now hides the phone number until `xl` and tightens gap so the brand and quote button never wrap.
+- [x] Stats card: 2-col grid on mobile with smaller number (`text-2xl`), tighter padding, smaller label tracking so the card breathes on iPhone SE.
+- [x] Section vertical padding standardised to `py-20 md:py-28 lg:py-36` on every section — desktop `py-36` preserved verbatim.
+- [x] Industries: switched from `md:grid-cols-4` to `lg:grid-cols-4` so iPad Mini shows two premium image cards per row instead of four cramped ones.
+- [x] Fleet: mobile row height reduced from 240px to 200px; tighter card gap.
+- [x] CTA card: responsive rounded corners (`rounded-[20px] md:rounded-[24px] lg:rounded-[28px]`) and padding scale.
+- [x] About: pillar section top margin now responsive (`mt-16 md:mt-20 lg:mt-24`).
+- [x] Verified across iPhone SE 375, Galaxy S22 360, iPhone 13/14/15 390, iPad Mini 768, iPad Pro 1024, and desktop 1440. Production build passes cleanly.
+
 ### v3 (final agency polish)
 - [x] Removed repetitive "colored middle word" cliché from 7 section headings; kept accent-highlight on About (period), CTA and Contact only for editorial variety.
 - [x] Unified heading scale at `text-3xl md:text-4xl lg:text-[3.5rem]` with tightened `leading-[1.05]`.

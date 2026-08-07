@@ -3,7 +3,7 @@ import { Reveal } from "./motion";
 import { FLEET } from "../data";
 
 export const FleetGallery = () => (
-  <section id="fleet" className="bg-surface py-28 md:py-36">
+  <section id="fleet" className="bg-surface py-20 md:py-28 lg:py-36">
     <div className="mx-auto max-w-[1400px] px-6 md:px-10 lg:px-14">
       <div className="mb-20 grid grid-cols-1 gap-8 lg:grid-cols-12 lg:items-end">
         <div className="lg:col-span-8">
@@ -31,7 +31,7 @@ export const FleetGallery = () => (
         </div>
       </div>
 
-      <div className="grid auto-rows-[240px] grid-cols-1 gap-5 sm:grid-cols-2 md:auto-rows-[280px] lg:grid-cols-4">
+      <div className="grid auto-rows-[200px] grid-cols-1 gap-4 sm:grid-cols-2 sm:auto-rows-[240px] sm:gap-5 md:auto-rows-[280px] lg:grid-cols-4">
         {FLEET.map((f, i) => (
           <Reveal key={f.title} delay={(i % 4) * 0.08} className={f.span}>
             <div

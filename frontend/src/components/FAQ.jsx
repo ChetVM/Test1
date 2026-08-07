@@ -6,7 +6,7 @@ import {
 import { FAQS } from "../data";
 
 export const FAQ = () => (
-  <section id="faq" className="bg-background py-28 md:py-36">
+  <section id="faq" className="bg-background py-20 md:py-28 lg:py-36">
     <div className="mx-auto max-w-[1400px] px-6 md:px-10 lg:px-14">
       <div className="grid grid-cols-1 gap-14 lg:grid-cols-12 lg:gap-16">
         <div className="lg:col-span-5">

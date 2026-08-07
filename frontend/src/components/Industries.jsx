@@ -50,7 +50,7 @@ const DATA = [
 ];
 
 export const Industries = () => (
-  <section id="industries" className="relative overflow-hidden bg-primary py-28 text-white md:py-36">
+  <section id="industries" className="relative overflow-hidden bg-primary py-20 text-white md:py-28 lg:py-36">
     <div
       className="absolute inset-0 opacity-[0.06]"
       style={{
@@ -85,7 +85,7 @@ export const Industries = () => (
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+      <div className="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
         {DATA.map((ind, i) => {
           const Icon = ICONS[ind.icon];
           return (

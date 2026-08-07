@@ -16,7 +16,7 @@ export const CTASection = () => {
     <section className="bg-background py-24 md:py-32">
       <div className="mx-auto max-w-[1400px] px-6 md:px-10 lg:px-14">
         <Reveal>
-          <div className="relative overflow-hidden rounded-[28px] bg-primary shadow-elegant-lg">
+          <div className="relative overflow-hidden rounded-[20px] bg-primary shadow-elegant-lg md:rounded-[24px] lg:rounded-[28px]">
             {/* Background image */}
             <motion.img
               src={CTA_BG}
@@ -36,19 +36,19 @@ export const CTASection = () => {
               }}
             />
 
-            <div className="relative grid grid-cols-1 gap-10 p-10 md:p-16 lg:grid-cols-12 lg:gap-16 lg:p-20">
+            <div className="relative grid grid-cols-1 gap-8 p-8 sm:p-12 md:p-16 lg:grid-cols-12 lg:gap-16 lg:p-20">
               <div className="lg:col-span-8">
-                <div className="mb-6 inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/[0.06] px-4 py-1.5 backdrop-blur">
+                <div className="mb-5 inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/[0.06] px-4 py-1.5 backdrop-blur sm:mb-6">
                   <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-                  <span className="text-[11px] font-semibold uppercase tracking-[0.22em] text-white">
+                  <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-white sm:text-[11px] sm:tracking-[0.22em]">
                     Ready When You Are
                   </span>
                 </div>
-                <h2 className="font-heading text-4xl font-bold leading-[1.05] text-white md:text-5xl lg:text-6xl">
+                <h2 className="font-heading text-3xl font-bold leading-[1.05] text-white sm:text-4xl md:text-5xl lg:text-6xl">
                   Let&apos;s move your freight
                   <span className="text-accent"> forward.</span>
                 </h2>
-                <p className="mt-6 max-w-xl text-base leading-relaxed text-white/70 md:text-lg">
+                <p className="mt-5 max-w-xl text-sm leading-relaxed text-white/70 sm:mt-6 sm:text-base md:text-lg">
                   Get a transparent quote today. Our team responds within hours — no
                   hidden fees, no obligations.
                 </p>

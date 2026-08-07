@@ -7,7 +7,7 @@ import { WHY_CHOOSE } from "../data";
 const ICONS = { Award, Truck, Navigation, UserCheck, Clock, Headphones, ShieldCheck, IndianRupee };
 
 export const WhyChooseUs = () => (
-  <section id="why" className="bg-background py-28 md:py-36">
+  <section id="why" className="bg-background py-20 md:py-28 lg:py-36">
     <div className="mx-auto max-w-[1400px] px-6 md:px-10 lg:px-14">
       <div className="mb-20 text-center">
         <Reveal>
