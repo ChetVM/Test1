@@ -3,22 +3,31 @@ import { Reveal } from "./motion";
 import { TESTIMONIALS } from "../data";
 
 export const Testimonials = () => (
-  <section id="testimonials" className="bg-surface py-24 md:py-32">
-    <div className="mx-auto max-w-[1400px] px-6 md:px-12 lg:px-16">
-      <div className="mb-16 flex flex-col justify-between gap-6 md:flex-row md:items-end">
-        <div>
+  <section id="testimonials" className="bg-surface py-28 md:py-36">
+    <div className="mx-auto max-w-[1400px] px-6 md:px-10 lg:px-14">
+      <div className="mb-20 grid grid-cols-1 gap-8 lg:grid-cols-12 lg:items-end">
+        <div className="lg:col-span-8">
           <Reveal>
-            <div className="mb-6 flex items-center gap-4">
-              <span className="h-px w-12 bg-accent" />
-              <span className="text-xs font-bold uppercase tracking-[0.3em] text-accent">
+            <div className="mb-6 inline-flex items-center gap-3 rounded-full border border-border bg-white px-4 py-1.5">
+              <span className="h-1.5 w-1.5 rounded-full bg-accent" />
+              <span className="text-[11px] font-semibold uppercase tracking-[0.22em] text-primary">
                 Client Testimonials
               </span>
             </div>
           </Reveal>
           <Reveal delay={0.05}>
-            <h2 className="max-w-2xl font-heading text-3xl font-bold leading-tight tracking-tight text-primary md:text-4xl lg:text-5xl">
-              Trusted by the businesses we move for.
+            <h2 className="max-w-2xl font-heading text-3xl font-bold leading-[1.08] text-primary md:text-4xl lg:text-5xl">
+              Trusted by the businesses
+              <span className="text-accent"> we move</span> for.
             </h2>
+          </Reveal>
+        </div>
+        <div className="lg:col-span-4">
+          <Reveal delay={0.1}>
+            <p className="text-base leading-relaxed text-muted-foreground">
+              Real feedback from operations heads, plant managers and supply chain
+              directors who partner with Atlas every day.
+            </p>
           </Reveal>
         </div>
       </div>
@@ -28,26 +37,37 @@ export const Testimonials = () => (
           <Reveal key={t.name} delay={i * 0.1}>
             <div
               data-testid={`testimonial-card-${i}`}
-              className="flex h-full flex-col border border-border bg-background p-8 transition-colors duration-300 hover:border-accent"
+              className="group relative flex h-full flex-col overflow-hidden rounded-[20px] border border-border bg-white p-8 transition-all duration-500 hover:-translate-y-2 hover:border-accent hover:shadow-elegant-lg md:p-10"
             >
-              <Quote className="text-accent" size={30} />
-              <div className="mt-5 flex gap-1">
+              {/* Large quote mark */}
+              <Quote
+                className="absolute -right-2 -top-2 text-accent/10 transition-colors duration-500 group-hover:text-accent/20"
+                size={130}
+                strokeWidth={1}
+              />
+
+              <div className="relative flex gap-1">
                 {Array.from({ length: t.rating }).map((_, s) => (
                   <Star key={s} size={16} className="fill-accent text-accent" />
                 ))}
               </div>
-              <p className="mt-5 flex-1 text-base leading-relaxed text-primary/90">
+
+              <p className="relative mt-6 flex-1 text-base leading-relaxed text-primary/90 md:text-lg">
                 “{t.quote}”
               </p>
-              <div className="mt-8 flex items-center gap-4 border-t border-border pt-6">
-                <img
-                  src={t.img}
-                  alt={t.name}
-                  className="h-12 w-12 object-cover grayscale"
-                />
+
+              <div className="relative mt-8 flex items-center gap-4 border-t border-border pt-6">
+                <div className="relative">
+                  <div className="absolute -inset-0.5 rounded-full bg-accent/20 opacity-0 blur-sm transition-opacity duration-500 group-hover:opacity-100" />
+                  <img
+                    src={t.img}
+                    alt={t.name}
+                    className="relative h-14 w-14 rounded-full object-cover ring-2 ring-white"
+                  />
+                </div>
                 <div>
-                  <div className="font-heading text-sm font-bold text-primary">{t.name}</div>
-                  <div className="text-xs text-muted-foreground">{t.role}</div>
+                  <div className="font-heading text-base font-bold text-primary">{t.name}</div>
+                  <div className="mt-0.5 text-xs text-muted-foreground">{t.role}</div>
                 </div>
               </div>
             </div>

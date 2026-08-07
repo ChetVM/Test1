@@ -118,12 +118,12 @@ export const FLEET = [
 ];
 
 export const PROCESS = [
-  { step: "01", title: "Request Quote", desc: "Share your shipment details and receive a transparent, competitive quote within hours." },
+  { step: "01", title: "Quote", desc: "Share shipment details and receive a transparent, competitive quote within hours." },
   { step: "02", title: "Planning", desc: "Our team maps the optimal route, vehicle and timeline for your consignment." },
-  { step: "03", title: "Pickup", desc: "Cargo is collected on schedule by trained crews with careful handling." },
-  { step: "04", title: "Real-Time Tracking", desc: "Monitor your shipment live with GPS visibility at every checkpoint." },
-  { step: "05", title: "Safe Delivery", desc: "Goods arrive intact and on time, backed by our 98% on-time record." },
-  { step: "06", title: "Customer Satisfaction", desc: "We close the loop with proof of delivery and dedicated after-service support." },
+  { step: "03", title: "Pickup", desc: "Cargo is collected on schedule by trained crews with careful, damage-free handling." },
+  { step: "04", title: "Tracking", desc: "Monitor your shipment live with GPS visibility at every checkpoint." },
+  { step: "05", title: "Transit", desc: "Goods move safely through our nationwide network with 24×7 monitoring." },
+  { step: "06", title: "Delivery", desc: "On-time delivery with proof of receipt and dedicated after-service support." },
 ];
 
 export const TESTIMONIALS = [

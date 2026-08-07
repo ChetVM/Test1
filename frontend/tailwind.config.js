@@ -8,8 +8,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        heading: ['Chivo', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-        body: ['"IBM Plex Sans"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        heading: ['Sora', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        body: ['"Plus Jakarta Sans"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
       borderRadius: {
         lg: 'var(--radius)',

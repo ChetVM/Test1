@@ -1,15 +1,16 @@
 # Atlas Freight Logistics — PRD
 
 ## Problem Statement
-Build a world-class, production-ready logistics company marketing website for **Atlas Freight Logistics** (Ahmedabad, India). Must feel handcrafted by a premium digital agency — clean, corporate, trustworthy, Awwwards-level craft — not AI slop. Fully static React site deployable to GitHub + Vercel. No backend, no database, no auth, no API keys, no Emergent branding/packages/analytics.
+Build a world-class, production-ready logistics company marketing website for **Atlas Freight Logistics** (Ahmedabad, India). Must feel handcrafted by a premium digital agency — Awwwards-level craft, comparable to DHL / Maersk / FedEx / Apple / Stripe / Tesla. Fully static React site deployable to GitHub + Vercel. No backend, no database, no auth, no API keys, no Emergent branding.
 
 ## Architecture
 - **Stack:** React 19 (CRA + Craco), TailwindCSS, Framer Motion, Lenis (smooth scroll), react-fast-marquee, lucide-react, shadcn/ui.
-- **Structure:** Single-page marketing site. All content in `src/data.js`. Sections composed in `src/App.js`.
-- **No backend:** Contact form is client-side validated; success message shown in-app.
-- **Palette:** Deep Navy (`226 60% 10%`), White, Light Gray surface (`210 20% 96%`), Orange accent (`24 95% 53%`).
-- **Typography:** Chivo (headings) + IBM Plex Sans (body) via Google Fonts.
-- **Motion:** Lenis momentum scroll, masked line-by-line hero reveal, parallax hero image, animated stat counters, scroll-triggered section reveals, editorial marquee.
+- **Structure:** Single-page marketing site. Content in `src/data.js`. Sections composed in `src/App.js`.
+- **No backend:** Contact form + newsletter are client-side validated with in-app success states.
+- **Palette:** Deep Navy (`224 47% 8%`), White, Light Gray surface (`220 24% 97%`), Orange accent (`22 96% 55%`).
+- **Typography:** Sora (headings, tight letter-spacing) + Plus Jakarta Sans (body).
+- **Radius:** 16–20px on cards, full-pill on CTAs.
+- **Motion:** Lenis momentum scroll, masked line-by-line hero reveal, parallax hero image, animated stat counters, scroll-triggered section reveals, editorial marquee with edge mask, animated horizontal process timeline.
 
 ## Personas
 - Enterprise supply-chain managers evaluating freight partners.
@@ -17,25 +18,42 @@ Build a world-class, production-ready logistics company marketing website for **
 - SMB owners requesting FTL/PTL quotes.
 
 ## Core Requirements (static)
-- 10 homepage sections: Hero + stats, Marquee, About (Mission/Vision/Values), Services (8), Why Choose Us (8), Industries (8), Fleet Gallery, Process Timeline (6 steps), Testimonials (3), FAQ (6), Contact + Map, Footer.
-- Sticky navbar with scroll state + mobile menu.
-- Floating + inline WhatsApp CTA with prefilled quotation message (+91 9484751234).
-- Embedded Google Maps of SG Highway, Ahmedabad.
+- 12 homepage sections in order: Hero + floating stats card, Marquee, About (Mission/Vision/Values + trust badges), Services (8), Why Choose Us (8), Industries (8, bg images), Fleet Gallery, Process Timeline (6 animated), Testimonials (3), FAQ (6), full-width CTA card, Contact + Map, Footer with newsletter.
+- Sticky navbar: transparent on top → dark glass with shrinking logo on scroll.
+- Floating stack: WhatsApp + Phone + conditional back-to-top.
+- Embedded Google Maps of SG Highway, Ahmedabad (styled).
 - SEO meta, Open Graph, Twitter cards, AF-monogram SVG favicon.
-- Responsive across mobile / tablet / desktop.
+- Fully responsive.
 
-## Implemented (Dec 2025)
-- [x] Removed all `@emergentbase/*` packages, PostHog analytics, `emergent-main.js`, `withVisualEdits` from craco.
-- [x] Chivo + IBM Plex Sans fonts, navy/orange design tokens, sharp corners.
-- [x] Kinetic hero with parallax truck image, masked headline reveal, animated 5-stat bar.
-- [x] All sections built with framer-motion scroll reveals + Lenis smooth scrolling.
-- [x] Fleet gallery with grayscale-on-idle / color-on-hover treatment.
-- [x] Contact form: client-side validation + animated success screen.
-- [x] Production build succeeds (146 kB gzipped JS), ready for Vercel/GitHub.
+## Implemented
+### v1 (initial MVP)
+- [x] Removed all `@emergentbase/*`, PostHog, `withVisualEdits`, `emergent-main.js`.
+- [x] Navy/orange design tokens, Chivo + IBM Plex fonts, sharp corners.
+- [x] All 11 sections built with framer-motion scroll reveals + Lenis smooth scrolling.
+- [x] Contact form with client-side validation + animated success screen.
 
-## Backlog (P1/P2)
-- P1: Add subpages (Services detail, About detail, Careers).
-- P1: Add a services PDF brochure download.
-- P2: Blog / news section powered by MDX.
-- P2: Live shipment tracking lookup (would need backend).
+### v2 (premium redesign)
+- [x] Upgraded to Sora + Plus Jakarta Sans; radius bumped to 16–20px.
+- [x] Navbar transparent → glass-dark on scroll + logo shrink.
+- [x] Cinematic hero with trust chip, star-rating strip, dual pill CTAs.
+- [x] Floating premium stat cards with animated counters (grid).
+- [x] Trust badges in About: ISO Certified, GPS Tracking, 24×7 Support, Dedicated Fleet, Pan India Coverage.
+- [x] Services cards: large icons, hover lift, icon-fills on hover, orange sweep bar.
+- [x] Why Choose Us: rounded cards with icon + number, hover lift, corner sheen.
+- [x] Industries with real background photos + hover overlay + arrow reveal.
+- [x] Fleet cards: rounded 20px, tonal image hover, arrow badge.
+- [x] Process: animated horizontal timeline with orange progress line + circular icon badges (6 steps: Quote/Planning/Pickup/Tracking/Transit/Delivery).
+- [x] Testimonials: large decorative quote glyph, star ratings, avatar with glow ring.
+- [x] FAQ: rounded accordion cards with orange open-state.
+- [x] Premium full-width CTA card before footer.
+- [x] Footer: newsletter band with pill input + rounded submit, four-column layout, floating socials.
+- [x] Contact: rounded pill inputs, glass panel, dark-styled Google Map, WhatsApp inline CTA.
+- [x] Floating contact stack: WhatsApp + Phone + Back-to-top.
+- [x] Production build passes cleanly (~148 kB gzipped JS).
+
+## Backlog
+- P1: Services detail pages, About detail page, Careers.
+- P1: PDF brochure download from hero.
+- P2: Client logo wall under marquee, Track-shipment lookup widget.
+- P2: Blog / news section (MDX).
 - P2: Multi-language (English + Hindi + Gujarati).
