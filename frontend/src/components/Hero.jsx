@@ -50,10 +50,11 @@ export const Hero = () => {
           transition={{ delay: 0.2, duration: 0.7 }}
           className="mb-8 inline-flex w-fit items-center gap-3 rounded-full border border-white/15 bg-white/[0.06] px-4 py-2 backdrop-blur-md"
         >
-          <span className="flex h-2 w-2 rounded-full bg-accent">
-            <span className="absolute h-2 w-2 animate-ping rounded-full bg-accent/60" />
+          <span className="relative flex h-2 w-2">
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-60" />
+            <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
           </span>
-          <span className="text-[11px] font-semibold uppercase tracking-[0.25em] text-white/90">
+          <span className="text-[10.5px] font-semibold uppercase tracking-[0.22em] text-white/90 sm:text-[11px] sm:tracking-[0.25em]">
             Trusted since 2000 · 500+ Enterprise Clients
           </span>
         </motion.div>

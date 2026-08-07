@@ -20,9 +20,8 @@ export const Services = () => (
             </div>
           </Reveal>
           <Reveal delay={0.05}>
-            <h2 className="max-w-3xl font-heading text-3xl font-bold leading-[1.08] text-primary md:text-4xl lg:text-5xl">
-              Complete logistics solutions,
-              <span className="text-accent"> engineered</span> for every load.
+            <h2 className="max-w-3xl font-heading text-3xl font-bold leading-[1.05] text-primary md:text-4xl lg:text-[3.5rem]">
+              Complete logistics solutions, engineered for every load.
             </h2>
           </Reveal>
         </div>

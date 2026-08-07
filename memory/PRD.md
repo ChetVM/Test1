@@ -32,6 +32,14 @@ Build a world-class, production-ready logistics company marketing website for **
 - [x] All 11 sections built with framer-motion scroll reveals + Lenis smooth scrolling.
 - [x] Contact form with client-side validation + animated success screen.
 
+### v3 (final agency polish)
+- [x] Removed repetitive "colored middle word" cliché from 7 section headings; kept accent-highlight on About (period), CTA and Contact only for editorial variety.
+- [x] Unified heading scale at `text-3xl md:text-4xl lg:text-[3.5rem]` with tightened `leading-[1.05]`.
+- [x] Rebalanced FAQ layout to 5/7 columns so the heading reads cleanly.
+- [x] Widened Industries heading max-width so it fits two lines on desktop.
+- [x] Tightened hero trust chip and refined the pulsing dot micro-interaction.
+- [x] Verified responsive polish across desktop (1440px) and mobile (390px).
+
 ### v2 (premium redesign)
 - [x] Upgraded to Sora + Plus Jakarta Sans; radius bumped to 16–20px.
 - [x] Navbar transparent → glass-dark on scroll + logo shrink.

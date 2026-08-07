@@ -8,8 +8,8 @@ import { FAQS } from "../data";
 export const FAQ = () => (
   <section id="faq" className="bg-background py-28 md:py-36">
     <div className="mx-auto max-w-[1400px] px-6 md:px-10 lg:px-14">
-      <div className="grid grid-cols-1 gap-14 lg:grid-cols-12 lg:gap-20">
-        <div className="lg:col-span-4">
+      <div className="grid grid-cols-1 gap-14 lg:grid-cols-12 lg:gap-16">
+        <div className="lg:col-span-5">
           <Reveal>
             <div className="mb-6 inline-flex items-center gap-3 rounded-full border border-border bg-surface px-4 py-1.5">
               <span className="h-1.5 w-1.5 rounded-full bg-accent" />
@@ -19,9 +19,8 @@ export const FAQ = () => (
             </div>
           </Reveal>
           <Reveal delay={0.05}>
-            <h2 className="font-heading text-3xl font-bold leading-[1.08] text-primary md:text-4xl lg:text-5xl">
-              Answers to the questions
-              <span className="text-accent"> we hear</span> most.
+            <h2 className="font-heading text-3xl font-bold leading-[1.05] text-primary md:text-4xl lg:text-5xl">
+              Answers to the questions we hear most.
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
@@ -45,7 +44,7 @@ export const FAQ = () => (
           </Reveal>
         </div>
 
-        <div className="lg:col-span-8">
+        <div className="lg:col-span-7">
           <Reveal delay={0.1}>
             <Accordion type="single" collapsible className="w-full space-y-3">
               {FAQS.map((f, i) => (

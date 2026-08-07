@@ -28,9 +28,8 @@ export const Process = () => {
             </div>
           </Reveal>
           <Reveal delay={0.05}>
-            <h2 className="mx-auto max-w-3xl font-heading text-3xl font-bold leading-[1.08] text-primary md:text-4xl lg:text-5xl">
-              A transparent process,
-              <span className="text-accent"> from quote</span> to doorstep.
+            <h2 className="mx-auto max-w-3xl font-heading text-3xl font-bold leading-[1.05] text-primary md:text-4xl lg:text-[3.5rem]">
+              A transparent process, from quote to doorstep.
             </h2>
           </Reveal>
         </div>

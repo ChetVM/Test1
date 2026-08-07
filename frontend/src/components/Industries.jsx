@@ -70,9 +70,8 @@ export const Industries = () => (
             </div>
           </Reveal>
           <Reveal delay={0.05}>
-            <h2 className="max-w-2xl font-heading text-3xl font-bold leading-[1.08] text-white md:text-4xl lg:text-5xl">
-              Trusted across the sectors
-              <span className="text-accent"> that build</span> the economy.
+            <h2 className="max-w-3xl font-heading text-3xl font-bold leading-[1.05] text-white md:text-4xl lg:text-[3.5rem]">
+              Trusted across the sectors that build the economy.
             </h2>
           </Reveal>
         </div>

@@ -46,8 +46,8 @@ export const About = () => (
             </div>
           </Reveal>
           <Reveal delay={0.05}>
-            <h2 className="font-heading text-3xl font-bold leading-[1.08] text-primary md:text-4xl lg:text-5xl">
-              Two and a half decades of moving India forward.
+            <h2 className="font-heading text-3xl font-bold leading-[1.05] text-primary md:text-4xl lg:text-[3.5rem]">
+              Two and a half decades of moving India forward<span className="text-accent">.</span>
             </h2>
           </Reveal>
           <Reveal delay={0.1}>

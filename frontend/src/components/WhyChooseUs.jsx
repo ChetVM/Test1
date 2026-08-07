@@ -19,9 +19,8 @@ export const WhyChooseUs = () => (
           </div>
         </Reveal>
         <Reveal delay={0.05}>
-          <h2 className="mx-auto max-w-3xl font-heading text-3xl font-bold leading-[1.08] text-primary md:text-4xl lg:text-5xl">
-            The reliability advantage that keeps
-            <span className="text-accent"> clients with us</span> for decades.
+          <h2 className="mx-auto max-w-3xl font-heading text-3xl font-bold leading-[1.05] text-primary md:text-4xl lg:text-[3.5rem]">
+            The reliability advantage that keeps clients with us for decades.
           </h2>
         </Reveal>
       </div>
