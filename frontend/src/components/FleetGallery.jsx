@@ -16,7 +16,7 @@ export const FleetGallery = () => (
             </div>
           </Reveal>
           <Reveal delay={0.05}>
-            <h2 className="max-w-2xl font-heading text-3xl font-bold leading-[1.05] text-primary md:text-4xl lg:text-[3.5rem]">
+            <h2 className="max-w-2xl font-heading text-[2.125rem] font-bold leading-[1.05] text-primary md:text-4xl lg:text-[3.5rem]">
               A modern, company-owned fleet built for the long haul.
             </h2>
           </Reveal>

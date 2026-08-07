@@ -44,7 +44,7 @@ export const CTASection = () => {
                     Ready When You Are
                   </span>
                 </div>
-                <h2 className="font-heading text-3xl font-bold leading-[1.05] text-white sm:text-4xl md:text-5xl lg:text-6xl">
+                <h2 className="font-heading text-[2.125rem] font-bold leading-[1.05] text-white sm:text-4xl md:text-5xl lg:text-6xl">
                   Let&apos;s move your freight
                   <span className="text-accent"> forward.</span>
                 </h2>

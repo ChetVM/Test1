@@ -32,6 +32,19 @@ Build a world-class, production-ready logistics company marketing website for **
 - [x] All 11 sections built with framer-motion scroll reveals + Lenis smooth scrolling.
 - [x] Contact form with client-side validation + animated success screen.
 
+### v5 (mobile & tablet typography pass — desktop untouched)
+- [x] Hero: chip `text-[10.5px] sm:text-[11px]`, headline `text-[2.75rem] sm:text-[3.25rem] md:text-6xl lg:text-[5.5rem]`, description `text-[17px] sm:text-lg md:text-xl`, CTAs `text-sm`, social-proof strip `text-[13px] sm:text-xs`.
+- [x] Stat cards: number `text-[28px] sm:text-3xl md:text-4xl`, label `text-[10.5px] sm:text-[11px] md:text-xs`.
+- [x] All section H2s bumped from `text-3xl` (30px) to `text-[2.125rem]` (34px) on mobile — desktop `md:text-4xl lg:text-[3.5rem]` preserved verbatim.
+- [x] Navbar mobile brand: logo box `h-11 w-11 text-base rounded-[12px]` (lg unchanged 48px), brand text `text-[15px] lg:text-base`, sublabel unified at `text-[10px]`.
+- [x] Card descriptions in About pillars, Services and Why Choose Us: `text-[15px] lg:text-sm` — mobile 15px, desktop 14px.
+- [x] Process step description bumped from `text-sm` → `text-[15px] lg:text-sm`.
+- [x] Testimonials role text: `text-[13px] lg:text-xs`.
+- [x] About trust badges label: `text-[13px] lg:text-xs`.
+- [x] Contact detail label `text-[11px] lg:text-[10px]`, value `text-[15px] lg:text-sm`.
+- [x] Newsletter heading `text-[26px] md:text-3xl lg:text-4xl`, description `text-[15px] md:text-base`.
+- [x] Verified on iPhone SE 375, Galaxy S22 360, iPhone 13/14/15 390, iPad Mini 768, iPad Pro 1024, and desktop 1440 (pixel-preserved). Production build passes cleanly.
+
 ### v4 (tablet & mobile UX pass — desktop untouched)
 - [x] Hero: mobile-specific typography scale (`text-[2.5rem] sm:text-5xl md:text-6xl lg:text-[5.5rem]`), short trust-chip copy on small screens, tighter vertical rhythm, `100svh` for mobile safe-area, full-width pill CTAs, image `object-position: 65% center` so the truck stays framed on narrow phones.
 - [x] Navbar: mobile drawer refactored to render outside the `motion.header` so `position: fixed` isn't scoped by the header's transform; slide-in with staggered nav items, larger 44×44 pill toggle button, body-scroll lock, opaque navy panel with contact info + WhatsApp CTA. iPad Pro (lg) navbar now hides the phone number until `xl` and tightens gap so the brand and quote button never wrap.

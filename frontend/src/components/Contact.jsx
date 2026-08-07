@@ -73,7 +73,7 @@ export const Contact = () => {
               </div>
             </Reveal>
             <Reveal delay={0.05}>
-              <h2 className="font-heading text-3xl font-bold leading-[1.08] text-white md:text-4xl lg:text-5xl">
+              <h2 className="font-heading text-[2.125rem] font-bold leading-[1.05] text-white md:text-4xl lg:text-5xl">
                 Let&apos;s move your
                 <span className="text-accent"> freight forward.</span>
               </h2>
@@ -93,15 +93,15 @@ export const Contact = () => {
                       <d.icon className="text-accent transition-colors duration-300 group-hover:text-white" size={18} />
                     </div>
                     <div>
-                      <div className="text-[10px] font-semibold uppercase tracking-[0.2em] text-white/40">
+                      <div className="text-[11px] font-semibold uppercase tracking-[0.2em] text-white/40 lg:text-[10px]">
                         {d.label}
                       </div>
                       {d.href ? (
-                        <a href={d.href} className="mt-1 block text-sm text-white/95 transition-colors hover:text-accent">
+                        <a href={d.href} className="mt-1 block text-[15px] text-white/95 transition-colors hover:text-accent lg:text-sm">
                           {d.value}
                         </a>
                       ) : (
-                        <div className="mt-1 text-sm text-white/95">{d.value}</div>
+                        <div className="mt-1 text-[15px] text-white/95 lg:text-sm">{d.value}</div>
                       )}
                     </div>
                   </div>

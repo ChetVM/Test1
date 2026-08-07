@@ -36,11 +36,11 @@ export const Footer = () => {
       <div className="relative border-b border-white/10">
         <div className="mx-auto grid max-w-[1400px] grid-cols-1 items-center gap-8 px-6 py-14 md:grid-cols-2 md:px-10 md:py-16 lg:px-14">
           <div>
-            <h3 className="font-heading text-2xl font-bold leading-tight text-white md:text-3xl lg:text-4xl">
+            <h3 className="font-heading text-[26px] font-bold leading-tight text-white md:text-3xl lg:text-4xl">
               Get logistics insights,
               <span className="text-accent"> straight to your inbox.</span>
             </h3>
-            <p className="mt-3 text-sm text-white/60 md:text-base">
+            <p className="mt-3 text-[15px] text-white/60 md:text-base">
               Quarterly updates on freight trends, industry benchmarks and network expansions.
               No spam, ever.
             </p>

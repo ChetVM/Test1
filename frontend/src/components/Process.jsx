@@ -28,7 +28,7 @@ export const Process = () => {
             </div>
           </Reveal>
           <Reveal delay={0.05}>
-            <h2 className="mx-auto max-w-3xl font-heading text-3xl font-bold leading-[1.05] text-primary md:text-4xl lg:text-[3.5rem]">
+            <h2 className="mx-auto max-w-3xl font-heading text-[2.125rem] font-bold leading-[1.05] text-primary md:text-4xl lg:text-[3.5rem]">
               A transparent process, from quote to doorstep.
             </h2>
           </Reveal>
@@ -83,11 +83,11 @@ export const Process = () => {
                       <Icon className="text-accent" size={26} strokeWidth={1.75} />
                     </div>
                     <div className="pt-2">
-                      <div className="font-heading text-xs font-bold uppercase tracking-[0.2em] text-accent">
+                      <div className="font-heading text-xs font-bold uppercase tracking-[0.2em] text-accent lg:text-xs">
                         Step {p.step}
                       </div>
                       <h3 className="mt-1 font-heading text-lg font-bold text-primary">{p.title}</h3>
-                      <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{p.desc}</p>
+                      <p className="mt-2 text-[15px] leading-relaxed text-muted-foreground lg:text-sm">{p.desc}</p>
                     </div>
                   </div>
                 </Reveal>

@@ -54,14 +54,14 @@ export const Hero = () => {
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-60" />
             <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
           </span>
-          <span className="text-[9.5px] font-semibold uppercase tracking-[0.18em] text-white/90 sm:text-[11px] sm:tracking-[0.25em]">
+          <span className="text-[10.5px] font-semibold uppercase tracking-[0.18em] text-white/90 sm:text-[11px] sm:tracking-[0.25em]">
             <span className="sm:hidden">Trusted since 2000</span>
             <span className="hidden sm:inline">Trusted since 2000 · 500+ Enterprise Clients</span>
           </span>
         </motion.div>
 
         {/* Headline */}
-        <h1 className="max-w-5xl font-heading text-[2.5rem] font-bold leading-[1.02] text-white sm:text-5xl md:text-6xl lg:text-[5.5rem]">
+        <h1 className="max-w-5xl font-heading text-[2.75rem] font-bold leading-[1.02] text-white sm:text-[3.25rem] md:text-6xl lg:text-[5.5rem]">
           <MaskedLines lines={["India's Trusted", "Logistics Partner"]} delay={0.35} />
         </h1>
 
@@ -69,7 +69,7 @@ export const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.95, duration: 0.7 }}
-          className="mt-5 max-w-xl text-base font-light leading-relaxed text-white/75 sm:mt-8 sm:text-lg md:text-xl"
+          className="mt-5 max-w-xl text-[17px] font-light leading-relaxed text-white/75 sm:mt-8 sm:text-lg md:text-xl"
         >
           25+ years of excellence in transportation and supply chain
           solutions — delivering trust across every mile.
@@ -84,7 +84,7 @@ export const Hero = () => {
           <button
             data-testid="hero-quote-btn"
             onClick={() => scrollTo("#contact")}
-            className="group relative inline-flex w-full items-center justify-center gap-3 overflow-hidden rounded-full bg-accent px-7 py-4 text-[13px] font-semibold uppercase tracking-[0.15em] text-white shadow-elegant-lg transition-transform duration-300 hover:scale-[1.03] sm:w-auto sm:px-8 sm:text-sm"
+            className="group relative inline-flex w-full items-center justify-center gap-3 overflow-hidden rounded-full bg-accent px-7 py-4 text-sm font-semibold uppercase tracking-[0.15em] text-white shadow-elegant-lg transition-transform duration-300 hover:scale-[1.03] sm:w-auto sm:px-8"
           >
             <span className="relative z-10">Get Free Quote</span>
             <ArrowRight
@@ -96,7 +96,7 @@ export const Hero = () => {
           <button
             data-testid="hero-services-btn"
             onClick={() => scrollTo("#services")}
-            className="group inline-flex w-full items-center justify-center gap-3 rounded-full border border-white/25 bg-white/[0.04] px-7 py-4 text-[13px] font-semibold uppercase tracking-[0.15em] text-white backdrop-blur-md transition-colors duration-300 hover:bg-white hover:text-primary sm:w-auto sm:px-8 sm:text-sm"
+            className="group inline-flex w-full items-center justify-center gap-3 rounded-full border border-white/25 bg-white/[0.04] px-7 py-4 text-sm font-semibold uppercase tracking-[0.15em] text-white backdrop-blur-md transition-colors duration-300 hover:bg-white hover:text-primary sm:w-auto sm:px-8"
           >
             <PlayCircle size={18} className="text-accent transition-transform duration-300 group-hover:scale-110 group-hover:text-primary" />
             Our Services
@@ -108,7 +108,7 @@ export const Hero = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.35, duration: 0.7 }}
-          className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-white/60 sm:mt-12 sm:gap-x-8 sm:gap-y-3"
+          className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-[13px] text-white/60 sm:mt-12 sm:gap-x-8 sm:gap-y-3 sm:text-xs"
         >
           <div className="flex items-center gap-1.5">
             {Array.from({ length: 5 }).map((_, i) => (
@@ -136,10 +136,10 @@ export const Hero = () => {
               key={s.label}
               className="group rounded-[12px] bg-white/[0.03] p-4 transition-colors duration-300 hover:bg-white/[0.07] sm:rounded-[14px] sm:p-5 md:p-6"
             >
-              <div className="font-heading text-2xl font-bold text-white sm:text-3xl md:text-4xl">
+              <div className="font-heading text-[28px] font-bold text-white sm:text-3xl md:text-4xl">
                 <Counter value={s.value} suffix={s.suffix} />
               </div>
-              <div className="mt-1.5 text-[9.5px] font-semibold uppercase leading-tight tracking-[0.14em] text-white/55 sm:mt-2 sm:text-[10.5px] sm:tracking-[0.18em] md:text-xs">
+              <div className="mt-1.5 text-[10.5px] font-semibold uppercase leading-tight tracking-[0.14em] text-white/55 sm:mt-2 sm:text-[11px] sm:tracking-[0.18em] md:text-xs">
                 {s.label}
               </div>
               <div className="mt-3 h-[2px] w-5 bg-accent transition-all duration-500 group-hover:w-14 sm:mt-4 sm:w-6" />

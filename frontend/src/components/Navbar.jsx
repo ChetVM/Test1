@@ -60,16 +60,16 @@ export const Navbar = () => {
             >
               <span
                 className={`flex items-center justify-center bg-accent font-heading font-extrabold text-white transition-all duration-500 shadow-elegant ${
-                  scrolled ? "h-9 w-9 text-sm rounded-[10px]" : "h-10 w-10 text-sm rounded-[12px] lg:h-12 lg:w-12 lg:text-lg lg:rounded-[14px]"
+                  scrolled ? "h-9 w-9 text-sm rounded-[10px]" : "h-11 w-11 text-base rounded-[12px] lg:h-12 lg:w-12 lg:text-lg lg:rounded-[14px]"
                 }`}
               >
                 AF
               </span>
               <span className="flex flex-col items-start leading-none">
-                <span className={`font-heading font-bold text-white transition-all duration-500 ${scrolled ? "text-sm" : "text-[13px] lg:text-base"}`}>
+                <span className={`font-heading font-bold text-white transition-all duration-500 ${scrolled ? "text-sm" : "text-[15px] lg:text-base"}`}>
                   Atlas Freight
                 </span>
-                <span className="mt-0.5 text-[9px] font-semibold uppercase tracking-[0.28em] text-accent lg:text-[10px]">
+                <span className="mt-0.5 text-[10px] font-semibold uppercase tracking-[0.28em] text-accent">
                   Logistics
                 </span>
               </span>

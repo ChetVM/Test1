@@ -19,7 +19,7 @@ export const WhyChooseUs = () => (
           </div>
         </Reveal>
         <Reveal delay={0.05}>
-          <h2 className="mx-auto max-w-3xl font-heading text-3xl font-bold leading-[1.05] text-primary md:text-4xl lg:text-[3.5rem]">
+          <h2 className="mx-auto max-w-3xl font-heading text-[2.125rem] font-bold leading-[1.05] text-primary md:text-4xl lg:text-[3.5rem]">
             The reliability advantage that keeps clients with us for decades.
           </h2>
         </Reveal>
@@ -47,7 +47,7 @@ export const WhyChooseUs = () => (
                   </span>
                 </div>
                 <h3 className="mt-8 font-heading text-lg font-bold text-primary">{w.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{w.desc}</p>
+                <p className="mt-3 text-[15px] leading-relaxed text-muted-foreground lg:text-sm">{w.desc}</p>
 
                 {/* Corner sheen */}
                 <div className="absolute -right-8 -top-8 h-24 w-24 rounded-full bg-accent/0 blur-2xl transition-all duration-500 group-hover:bg-accent/10" />

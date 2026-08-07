@@ -19,7 +19,7 @@ export const FAQ = () => (
             </div>
           </Reveal>
           <Reveal delay={0.05}>
-            <h2 className="font-heading text-3xl font-bold leading-[1.05] text-primary md:text-4xl lg:text-5xl">
+            <h2 className="font-heading text-[2.125rem] font-bold leading-[1.05] text-primary md:text-4xl lg:text-5xl">
               Answers to the questions we hear most.
             </h2>
           </Reveal>

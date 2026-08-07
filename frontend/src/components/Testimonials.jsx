@@ -16,7 +16,7 @@ export const Testimonials = () => (
             </div>
           </Reveal>
           <Reveal delay={0.05}>
-            <h2 className="max-w-2xl font-heading text-3xl font-bold leading-[1.05] text-primary md:text-4xl lg:text-[3.5rem]">
+            <h2 className="max-w-2xl font-heading text-[2.125rem] font-bold leading-[1.05] text-primary md:text-4xl lg:text-[3.5rem]">
               Trusted by the businesses we move for.
             </h2>
           </Reveal>
@@ -66,7 +66,7 @@ export const Testimonials = () => (
                 </div>
                 <div>
                   <div className="font-heading text-base font-bold text-primary">{t.name}</div>
-                  <div className="mt-0.5 text-xs text-muted-foreground">{t.role}</div>
+                  <div className="mt-0.5 text-[13px] text-muted-foreground lg:text-xs">{t.role}</div>
                 </div>
               </div>
             </div>

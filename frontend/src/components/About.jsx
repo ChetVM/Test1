@@ -46,7 +46,7 @@ export const About = () => (
             </div>
           </Reveal>
           <Reveal delay={0.05}>
-            <h2 className="font-heading text-3xl font-bold leading-[1.05] text-primary md:text-4xl lg:text-[3.5rem]">
+            <h2 className="font-heading text-[2.125rem] font-bold leading-[1.05] text-primary md:text-4xl lg:text-[3.5rem]">
               Two and a half decades of moving India forward<span className="text-accent">.</span>
             </h2>
           </Reveal>
@@ -76,7 +76,7 @@ export const About = () => (
                   className="group flex items-center gap-2.5 rounded-full border border-border bg-white px-4 py-2.5 transition-all duration-300 hover:border-accent hover:shadow-elegant"
                 >
                   <b.icon className="text-accent transition-transform duration-300 group-hover:scale-110" size={16} />
-                  <span className="text-xs font-semibold text-primary">{b.label}</span>
+                  <span className="text-[13px] font-semibold text-primary lg:text-xs">{b.label}</span>
                 </div>
               ))}
             </div>
@@ -119,7 +119,7 @@ export const About = () => (
                 </span>
               </div>
               <h3 className="mt-8 font-heading text-xl font-bold text-primary">{p.title}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{p.desc}</p>
+              <p className="mt-3 text-[15px] leading-relaxed text-muted-foreground lg:text-sm">{p.desc}</p>
             </div>
           </Reveal>
         ))}

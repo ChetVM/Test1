@@ -20,7 +20,7 @@ export const Services = () => (
             </div>
           </Reveal>
           <Reveal delay={0.05}>
-            <h2 className="max-w-3xl font-heading text-3xl font-bold leading-[1.05] text-primary md:text-4xl lg:text-[3.5rem]">
+            <h2 className="max-w-3xl font-heading text-[2.125rem] font-bold leading-[1.05] text-primary md:text-4xl lg:text-[3.5rem]">
               Complete logistics solutions, engineered for every load.
             </h2>
           </Reveal>
@@ -62,7 +62,7 @@ export const Services = () => (
                 <h3 className="mt-8 font-heading text-lg font-bold text-primary">
                   {s.title}
                 </h3>
-                <p className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">
+                <p className="mt-3 flex-1 text-[15px] leading-relaxed text-muted-foreground lg:text-sm">
                   {s.desc}
                 </p>
 
