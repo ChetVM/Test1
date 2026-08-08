@@ -4,8 +4,10 @@ import { ArrowRight, PlayCircle, Star } from "lucide-react";
 import { MaskedLines, Counter } from "./motion";
 import { STATS } from "../data";
 
-const HERO_IMG =
+const HERO_IMG_DESKTOP =
   "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=2400&q=80";
+const HERO_IMG_MOBILE =
+  "https://images.unsplash.com/photo-1635774152029-17bf0a3e1cb4?auto=format&fit=crop&w=1200&q=80";
 
 export const Hero = () => {
   const ref = useRef(null);
@@ -28,13 +30,17 @@ export const Hero = () => {
       id="home"
       className="relative min-h-[100svh] overflow-hidden bg-primary grain-overlay lg:min-h-screen"
     >
-      {/* Parallax background - object-position tuned for mobile framing */}
+      {/* Parallax background — small/tablet portrait screens use a full-truck image, desktop keeps the cinematic close-up */}
       <motion.div style={{ y, scale }} className="absolute inset-0 z-0">
-        <img
-          src={HERO_IMG}
-          alt="Cinematic view of modern logistics fleet at dusk"
-          className="h-full w-full object-cover object-[65%_center] sm:object-center"
-        />
+        <picture>
+          <source media="(min-width: 1024px)" srcSet={HERO_IMG_DESKTOP} />
+          <img
+            src={HERO_IMG_MOBILE}
+            alt="Atlas Freight modern long-haul truck ready for despatch"
+            className="h-full w-full object-cover object-[center_35%] sm:object-[center_40%] lg:object-center"
+            data-testid="hero-image"
+          />
+        </picture>
       </motion.div>
       <motion.div
         style={{ opacity: overlayOpacity }}
