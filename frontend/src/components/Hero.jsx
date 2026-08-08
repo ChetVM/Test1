@@ -5,9 +5,9 @@ import { MaskedLines, Counter } from "./motion";
 import { STATS } from "../data";
 
 const HERO_IMG_DESKTOP =
-  "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=2400&q=80";
+  "https://images.unsplash.com/photo-1766608422198-5be9ac0aac9e?auto=format&fit=crop&w=2400&q=85";
 const HERO_IMG_MOBILE =
-  "https://images.unsplash.com/photo-1635774152029-17bf0a3e1cb4?auto=format&fit=crop&w=1200&q=80";
+  "https://images.unsplash.com/photo-1766608422198-5be9ac0aac9e?auto=format&fit=crop&w=1200&q=85";
 
 export const Hero = () => {
   const ref = useRef(null);
